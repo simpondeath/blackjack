@@ -1,0 +1,241 @@
+body
+{
+    background-color: #000000;
+    color: #f1f1f1f1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: radial-gradient(rgb(15, 0, 0), black);
+}
+
+/* .content
+{
+    border: 10px solid red;
+    width: 100%;
+} */
+
+.red
+{
+    color: rgb(255, 0, 255);
+}
+
+
+.nav
+{
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin: 10px 10px 0px 10px;
+}
+
+.nav ul
+{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 500px;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    font-size: 22px;
+}
+
+    /* .nav ul a
+    {
+        color: #f1f1f1f1;
+        text-decoration: none;
+    }
+    */
+
+
+.nav ul a:hover
+{
+    color: red; 
+    transition:.6s ease-in-out;
+}
+
+
+.hero
+{
+    /* border: 3px solid red; */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu-container
+{
+    /* border: 2px solid red; */
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#1a0000, black);
+    animation: opacityAnim .9s 1;
+    opacity: 1;
+}
+
+@keyframes opacityAnim
+{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes scaleAnim
+{
+    from{scale:0;}
+    to{scale:1;}
+}
+
+.menu-container.hide
+{   
+    display: none;
+    opacity: 0;
+}
+
+.menu-container-items
+{
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 500px;
+    text-align: center;
+}
+
+.menu-container-items h1
+{
+    color: #f1f1f1f1;
+    font-size: 25px;
+    /* border: 1px solid red; */
+    padding: 30px;
+}
+
+.menu-container-items button
+{
+    /* border: 1px solid red; */
+    margin-top: 40px;
+}
+
+.game-container
+{
+    /* border: 2px solid red; */
+    height: 500px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    scale: 0;
+}
+
+.game-container.visible
+{   
+    animation: scaleAnim .4s 1 ;
+    display: flex;
+    scale: 1;
+}
+
+.game-container-items
+{
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 500px;
+    text-align: center;
+}
+
+.game-container-items h1
+{
+    color: #f1f1f1f1;
+    font-size: 25px;
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+
+.game-details-container
+{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container-items button
+{
+    /* border: 1px solid red; */
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.game-details
+{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    width: 250px;
+    font-size: 23px;
+    padding: 10px;
+}
+
+.button
+{
+    width: 120px;
+    padding: 15px;
+    background: #670059be;
+    box-sizing: border-box;
+    box-shadow: 0 0 90px #670059;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px; 
+    text-shadow: 0 0 10px #ffffff;
+    color: #ffffff;
+    border-radius: 10px;
+    scale: 1;
+    border: 1px hidden rgb(0, 0, 0);
+
+}
+
+@keyframes buttonClickAnim
+{
+   0%{scale: 1;}
+   50%{scale: .7;}
+   100%{scale: 1;}
+}
+
+button:active
+{   
+    scale: .8;  
+    animation: buttonClickAnim .5s 1;
+}
+
+.button:hover
+{
+    cursor: pointer;
+}
+
+#start-game-btn
+{
+    display: block;
+}
+#start-game-btn.hide
+{
+    display: none;
+}
+
+#new-card-btn
+{
+    display: none;
+}
+
+#new-card-btn.visible
+{
+    display: block;
+}
+#replay-btn
+{
+    display:none;
+}
+
+#replay-btn.visible
+{
+    display:block;
+}

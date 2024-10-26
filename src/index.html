@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = 'reset.css'>
+    <link rel = 'stylesheet' href = 'style.css'>
+    <title>BlackJack | Online Casino</title>
+</head>
+<body>
+    <div class="content">
+        <div class="nav">
+            <ul>
+                <li><a href = '#'>Place Bet</a></li>
+                <li><a href = '#'>Lobby</a></li>
+                <li><a href = '#'>Cigar Room</a></li>
+            </ul>
+        </div>
+        <div class="hero">
+            <div class="menu-container">
+                <div class="menu-container-items">
+                    <h1>Click Button To <span class = 'red'>Play</span></h1>
+                    <button onclick= "loadDeck()" id = 'start-btn' class = 'button'>Load Deck</button>
+                </div>
+            </div>
+            <div class="game-container">
+                <div class="game-container-items">
+                    <h1 id = 'player-info'></h1>
+                    <div class="game-details-container">
+                        <div class="game-details">
+                            <h2 id = 'display-cards'></h2>
+                            <h2 id = 'display-sum'></h2>
+                        </div>
+                    </div>
+                    <button id = "start-game-btn" class = 'button'>Start Game</button>
+                    <button onclick = "newCard()" id = 'new-card-btn' class = 'button'>New Card</button>
+                    <button onclick = "quitGame()" id = 'quit-btn' class = 'button'>Quit</button>
+                    <button onclick = 'replayGame()' id = 'replay-btn' class = 'button'>Replay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = 'index.js'></script>
+</body>
+</html>
